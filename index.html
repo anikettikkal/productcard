@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product_Card</title>
+    <style>
+        .product-page{
+            display: flex;
+            direction: row;
+            justify-content: space-evenly;
+            border:2px solid black;
+        }
+        .imagecontainer{
+            font-family: sans-serif;
+            padding-top: 100px;
+            padding-left: 30px;
+        }
+        .descriptioncontainer{
+            font-family: sans-serif;
+        }
+        .set-the-size{
+            display: flex;
+            direction: row;
+            justify-content: space-evenly;
+        }
+        .btn{
+            border:1px solid white;
+            background-color:white;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        let count = 0;
+        function plus()
+        {
+            count++
+            document.getElementById('counter').innerHTML = count;
+        }
+
+        function minus()
+        {
+            count--
+            document.getElementById('counter').innerHTML = count;
+        }
+    </script>
+</head>
+<body>
+    <div class="product-page">
+        <div class="imagecontainer">
+            <img src="https://rukminim1.flixcart.com/image/832/832/ksuowi80/shoe/s/h/q/9-sports-shoes-airbell-black-original-imag6b3uqbqnxhdh.jpeg?q=70", height="350px">
+            <h2>Size</h2>
+            <div class="set-the-size">
+            <button onclick="plus()" class="btn"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png", height="40px"></button>
+            <h1 id="counter">0</h1>
+            <button onclick="minus()" class="btn"><img src="https://cdn-icons-png.flaticon.com/512/4315/4315581.png", height="40px"></button>
+            </div>
+        </div>
+        <div class="descriptioncontainer">
+            <p>Richman</p>
+            <h3>415-ZIGZAG Running Shoes For Mens ( Black )</h3>
+            <h4>Price <del style="color:red;">899</del> 599 Rs/- </h4>
+            <h1>Currently Available</h1>
+            <p>For every $20 Spent <br> you earn 2 SuperCoins</p> <br>
+            <h2>Product Details</h2>
+            <p>We announces the first running shoes that will include the Nike react <br>
+            A patented from that offers more cushioning. <br>
+            an outer covering for the human foot typically having a thick or stiff sole <br>
+            with an attched heel and an upper part of lighter material. </p> <br>
+            <h2>Rating & Reviews <img src="https://cdn-icons-png.flaticon.com/512/3163/3163742.png", height="80px"> </h2>
+            <p>6 Ratings and one Review </p>
+        </div>
+    </div>
+</body>
+</html>
